@@ -13,7 +13,7 @@ const createPost = async (req, res, next) => {
 
         res.status(201).json({ message: 'Post creado con éxito', post: newPost.rows[0] });
     } catch (error) {
-        next(error);
+        next(error)
     }
 };
 
