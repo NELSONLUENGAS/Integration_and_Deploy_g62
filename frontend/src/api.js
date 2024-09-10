@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000'; // Cambia esto si tu API está en una URL diferente
+const API_URL = import.meta.env.VITE_API_URL; // Cambia esto si tu API está en una URL diferente
 
 // Función para registrar un nuevo usuario
 export const register = async (name, email, password) => {
